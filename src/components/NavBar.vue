@@ -4,7 +4,7 @@
             <v-navigation-drawer v-model="drawer" app>
                 <v-list dense>
                     <v-list-item link v-for="link in links" :key="links.name" @click.stop="drawer = !drawer">
-                        <v-icon >{{link.icon}}</v-icon>
+                        <v-icon color="primary">{{link.icon}}</v-icon>
                         <v-btn :href="link.to" class="drawer-links" outlined>{{link.name}}</v-btn>
                     </v-list-item>
                 </v-list>
@@ -27,7 +27,7 @@
                  v-for="link in links"
                  :key="link.name">
                 <v-btn :href="link.to" class="nav-btn" color="black" large outlined>
-                    <v-icon class="mr-2">{{link.icon}}</v-icon>
+                    <v-icon color="primary" class="mr-2">{{link.icon}}</v-icon>
                     {{link.name}}
                 </v-btn>
             </div>
