@@ -27,9 +27,13 @@ a {
 .modal-btn {
   position: absolute;
   z-index: 999;
-  top: 5px;
-  left: 5px;
+  top: 3px;
+  right: 3px;
+}
 
+.text-black {
+  color: black;
+  text-shadow: 1px 1px white;
 }
 @media only screen and (max-width: 992px) {
   .nav-btn {
