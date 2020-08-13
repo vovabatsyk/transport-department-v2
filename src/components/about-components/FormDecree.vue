@@ -44,15 +44,17 @@
         <v-dialog v-model="dialog">
             <v-card>
                 <v-btn
+                        class="modal-btn pa-1"
                         color="red darken-4"
                         @click="dialog = false"
-                        class="modal-btn"
-                >
-                    Закрити
+                        dark>
+                    <v-icon dark left>mdi-arrow-left</v-icon>Закрити
                 </v-btn>
+
+                <h3 class="pa-2">Номерний знак: {{getPhotos.numberCar}}</h3>
                 <v-carousel>
                     <v-carousel-item
-                            v-for="(photo,i) in photos"
+                            v-for="(photo,i) in getPhotos.img"
                             :key="i"
                             :src="photo"
                             reverse-transition="fade-transition"
@@ -65,7 +67,7 @@
     </div>
 </template>
 <script>
-  import {mapActions} from 'vuex'
+  import {mapActions, mapGetters} from 'vuex'
 
   export default {
 
@@ -77,20 +79,14 @@
       dialog: false,
       photos: []
     }),
+    computed: mapGetters(['getPhotos']),
     methods: {
       ...mapActions(['fetchPhotos']),
       async validate() {
         if (this.$refs.form.validate()) {
           this.dialog = true
-          let photos = await this.fetchPhotos({numberCar: this.numberCar, numberDecree: this.numberDecree})
-          if(photos.length){
-            this.photos = photos[0].img  // TODO make a validation check
-          } else {
-           if(!this.dialog) {
-             this.photos = []
-             photos = []
-            }
-          }
+          await this.fetchPhotos({numberCar: this.numberCar, numberDecree: this.numberDecree})
+
           this.numberCar = ''
           this.numberDecree = ''
           this.checkbox = false

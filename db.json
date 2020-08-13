@@ -13,7 +13,7 @@
     {
       "id": 2,
       "numberDecree": "111111",
-      "numberCar": "1111",
+      "numberCar": "BC4020AI",
       "evacuation": true,
       "img": [
         "https://rv.suspilne.media/cdn/1/image/2019/03/15/b12868a403a85bdf3e45989320bb8692.jpg",
@@ -23,7 +23,7 @@
     {
       "id": 3,
       "numberDecree": "000000",
-      "numberCar": "000000",
+      "numberCar": "BC4030AI",
       "evacuation": false,
       "img": [
         "https://media.acc.cv.ua/news/article/2017/11/20/4339/23770080_1752284431508977_538847648_o.g.jpg",
@@ -33,21 +33,11 @@
     {
       "id": 4,
       "numberDecree": "001231",
-      "numberCar": "2222",
+      "numberCar": "BC4050AI",
       "evacuation": true,
       "img": [
         "https://media.acc.cv.ua/news/article/2017/11/20/4339/23770080_1752284431508977_538847648_o.g.jpg",
         "https://pmg.ua/uploads/2019-06/07/5cfa15343da91-1.jpg"
-      ]
-    },
-    {
-      "id": 5,
-      "numberDecree": "001231",
-      "numberCar": "2222",
-      "evacuation": true,
-      "img": [
-        "",
-        ""
       ]
     }
   ]

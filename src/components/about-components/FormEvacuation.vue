@@ -36,13 +36,14 @@
         <v-dialog v-model="dialog">
             <v-card>
                 <v-btn
+                        class="modal-btn pa-1"
                         color="red darken-4"
                         @click="dialog = false"
-                        class="modal-btn"
-                >
-                    Закрити
+                        dark>
+                    <v-icon dark left>mdi-arrow-left</v-icon>Закрити
                 </v-btn>
-                <p class="mt-3 ml-3">Номерний знак: {{getPhotos.numberCar}}</p>
+
+                <h3 class="pa-2">Номерний знак: {{getPhotos.numberCar}}</h3>
                 <v-carousel>
                     <v-carousel-item
                             v-for="(photo,i) in getPhotos.img"
@@ -73,8 +74,6 @@
       async validate() {
         if (this.$refs.form.validate()) {
           await this.fetchEvacuationPhotos({numberCar: this.numberCar})
-          console.log(this.getPhotos)
-          // this.photos = this.getPhotos.img
           this.dialog = true
 
           this.checkboxNumber = false
