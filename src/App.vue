@@ -1,32 +1,41 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+  <v-app id="inspire">
+    <v-sheet
+            class="px-3 pt-3 pb-3"
+            v-if="loader"
+    >
+      <v-skeleton-loader
+              class="mx-auto"
+              type="table"
+      ></v-skeleton-loader>
+    </v-sheet>
+    <div v-else>
+      <NavBar/>
+      <v-main>
+        <v-parallax src="./assets/img/02.jpg"></v-parallax>
+        <about/>
+        <legislation/>
+        <information/>
+      </v-main>
+
+      <Footer id="footer"/>
     </div>
-    <router-view/>
-  </div>
+  </v-app>
 </template>
 
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
-#nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
+<script>
+  import NavBar from './components/NavBar'
+  import Footer from './components/Footer'
+  import About from './components/About'
+  import Legislation from './components/Legislation'
+  import Information from './components/Information'
+  export default {
+    data: () => ({
+      loader: true
+    }),
+    components: {NavBar, Footer, About, Legislation, Information},
+    mounted() {
+      this.loader = false
     }
   }
-}
-</style>
+</script>
