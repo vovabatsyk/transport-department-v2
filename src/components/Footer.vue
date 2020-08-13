@@ -32,7 +32,8 @@
                 </v-card>
             </div>
             <div class="pa-2">
-                <div class="d-flex"><img src="../assets/img/lmr.png" width="175" alt="lmr"></div>
+                <div class="d-flex"><img src="../assets/img/drawer-lviv.png" width="175" alt="lmr"></div>
+                <div class="d-flex"><img src="../assets/img/lmr.png" width="175" alt="lviv"></div>
             </div>
         </v-footer>
         <v-footer color="primary">

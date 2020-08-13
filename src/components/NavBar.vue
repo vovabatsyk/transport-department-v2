@@ -19,7 +19,7 @@
             </div>
             <v-toolbar-title>
                 <img src="../assets/img/lmr3.png" width="110" class="mt-2 ml-2"/>
-                <img src="../assets/img/transport.jpg" width="180" class="ml-5"/>
+                <img src="../assets/img/drawer-lviv.png" height="60" class="ml-5"/>
 
             </v-toolbar-title>
             <v-spacer></v-spacer>
