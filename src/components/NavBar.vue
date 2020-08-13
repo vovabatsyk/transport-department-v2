@@ -9,7 +9,7 @@
                     </v-list-item>
                 </v-list>
                 <div>
-                    <img class="drawer-logo" src="../assets/img/drawer-lviv.png" alt="lviv logo">
+                    <img class="drawer-logo" src="../assets/img/drawer-lviv.png"git  alt="lviv logo">
                 </div>
             </v-navigation-drawer>
         </div>
