@@ -12,7 +12,7 @@
     <div v-else>
       <NavBar/>
       <v-main>
-        <v-parallax src="./assets/img/02.jpg"></v-parallax>
+        <v-parallax src="./assets/img/parking-inspectors.jpg" alt="Parking inspectors"></v-parallax>
         <about/>
         <legislation/>
         <information/>

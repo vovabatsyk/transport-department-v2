@@ -15,7 +15,7 @@
                 <v-text-field
                         v-model="numberDecree"
                         :counter="6"
-                        :rules="[v => !!v || 'Заповніть поле', v => (v && v.length == 6) || 'Номер постанови складається з 6 символів']"
+                        :rules="[v => !!v || 'Заповніть поле', v => (v && v.length === 6) || 'Номер постанови складається з 6 символів']"
                         label="Номер постанови"
                         required>
                 </v-text-field>
@@ -44,17 +44,18 @@
         <v-dialog v-model="dialog">
             <v-card>
                 <v-btn
-                        class="modal-btn pa-1"
+                        class="modal-btn"
+                        text
                         color="red darken-4"
                         @click="dialog = false"
                         dark>
-                    <v-icon dark left>mdi-arrow-left</v-icon>Закрити
+                    <v-icon dark left>mdi-exit-to-app</v-icon>
                 </v-btn>
 
-                <h3 class="pa-2">Номерний знак: {{getPhotos.numberCar}}</h3>
+                <h4 class="pa-2">Номерний знак: BC4444AA</h4>
                 <v-carousel>
                     <v-carousel-item
-                            v-for="(photo,i) in getPhotos.img"
+                            v-for="(photo,i) in photos"
                             :key="i"
                             :src="photo"
                             reverse-transition="fade-transition"
@@ -67,7 +68,7 @@
     </div>
 </template>
 <script>
-  import {mapActions, mapGetters} from 'vuex'
+  import {mapActions} from 'vuex'
 
   export default {
 
@@ -77,15 +78,19 @@
       numberCar: '',
       checkbox: false,
       dialog: false,
-      photos: []
+      photos: [
+        'https://media.acc.cv.ua/news/article/2017/11/20/4339/23770080_1752284431508977_538847648_o.g.jpg',
+        'https://pmg.ua/uploads/2019-06/07/5cfa15343da91-1.jpg'
+
+      ]
     }),
-    computed: mapGetters(['getPhotos']),
+    // computed: mapGetters(['getPhotos']),
     methods: {
       ...mapActions(['fetchPhotos']),
       async validate() {
         if (this.$refs.form.validate()) {
           this.dialog = true
-          await this.fetchPhotos({numberCar: this.numberCar, numberDecree: this.numberDecree})
+          // await this.fetchPhotos({numberCar: this.numberCar, numberDecree: this.numberDecree})
 
           this.numberCar = ''
           this.numberDecree = ''

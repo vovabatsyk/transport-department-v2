@@ -9,7 +9,7 @@ export default new Vuex.Store({
   },
   mutations: {
     updatePhotos(state, photos) {
-      state.photos = photos
+        state.photos = photos
     },
     updateEvacuationPhotos(state, photos) {
       state.photos = photos

@@ -4,7 +4,7 @@
             <form-decree/>
             <form-evacuation/>
         </div>
-        <v-parallax src="../assets/img/lviv.jpg" id="about"></v-parallax>
+        <v-parallax src="../assets/img/lviv.jpg" id="about" alt="Lviv"></v-parallax>
         <h4 class="text-center mb-0 mt-3">Департамент житлового господарства та інфраструктури</h4>
         <h2 class="text-center">Управління транспорту ЛМР</h2>
         <div class="d-flex justify-center">
@@ -23,7 +23,7 @@
                 </div>
             </div>
         </div>
-        <v-parallax src="../assets/img/01.jpg">
+        <v-parallax src="../assets/img/parking-inspector.jpg" alt="Parking inspector">
             <div class="d-flex justify-center">
                 <div class="inspector-text">
                     <h2 class="text-center">Інспектор з паркування</h2>

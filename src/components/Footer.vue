@@ -7,7 +7,6 @@
         >
             <div class="pa-2">
 
-
                 <v-card
                         max-width="375"
                         class="mx-auto"
@@ -27,13 +26,12 @@
                             </v-list-item>
                         </a>
                         <v-divider inset></v-divider>
-
                     </v-list>
                 </v-card>
             </div>
             <div class="pa-2">
-                <div class="d-flex"><img src="../assets/img/drawer-lviv.png" width="175" alt="lmr"></div>
-                <div class="d-flex"><img src="../assets/img/lmr.png" width="175" alt="lviv"></div>
+                <div><img src="../assets/img/lviv-logo.png" width="175" alt="Lviv"></div>
+                <div><img src="../assets/img/lmr.png" width="175" alt="Lmr"></div>
             </div>
         </v-footer>
         <v-footer color="primary">
