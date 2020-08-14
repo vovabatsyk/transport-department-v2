@@ -9,7 +9,7 @@
                     </v-list-item>
                 </v-list>
                 <div>
-                    <img class="drawer-logo" src="../assets/img/drawer-lviv.png"git  alt="lviv logo">
+                    <img class="drawer-logo mb-10" src="../assets/img/lviv-logo.png" alt="Lviv">
                 </div>
             </v-navigation-drawer>
         </div>
@@ -18,9 +18,8 @@
                 <v-icon @click.stop="drawer = !drawer" color="grey">mdi-menu</v-icon>
             </div>
             <v-toolbar-title>
-                <img src="../assets/img/lmr3.png" width="110" class="mt-2 ml-2"/>
-                <img src="../assets/img/drawer-lviv.png" height="60" class="ml-5"/>
-
+                <img src="../assets/img/lmr.png" alt="Lmr" width="110" class="mt-2 ml-2"/>
+                <img src="../assets/img/lviv-logo.png" alt="Lviv" height="60" class="ml-5"/>
             </v-toolbar-title>
             <v-spacer></v-spacer>
             <div class="my-2 ml-2"

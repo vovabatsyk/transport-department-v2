@@ -1,25 +1,26 @@
 <template>
   <v-app id="inspire">
+
     <v-sheet
             class="px-3 pt-3 pb-3"
-            v-if="loader"
-    >
+            v-if="loader">
       <v-skeleton-loader
               class="mx-auto"
-              type="table"
-      ></v-skeleton-loader>
+              type="table">
+      </v-skeleton-loader>
     </v-sheet>
+
     <div v-else>
       <NavBar/>
       <v-main>
-        <v-parallax src="./assets/img/02.jpg"></v-parallax>
+        <v-parallax src="./assets/img/parking-inspectors.jpg" alt="Parking inspectors"></v-parallax>
         <about/>
         <legislation/>
         <information/>
       </v-main>
-
       <Footer id="footer"/>
     </div>
+
   </v-app>
 </template>
 

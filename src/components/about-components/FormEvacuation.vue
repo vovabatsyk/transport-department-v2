@@ -8,21 +8,25 @@
                 </svg>
             </div>
             <div class="mb-4 text-center">Евакуйовані авто</div>
+
             <v-form ref="form"
                     v-model="valid"
                     lazy-validation>
+
                 <v-text-field
                         v-model="numberCar"
                         :rules="[v => !!v || 'Заповніть поле', v => (v && v.length >= 4) || 'Введіть не менше 4 символа']"
                         label="Номерний знак авто"
                         required>
                 </v-text-field>
+
                 <v-checkbox
                         v-model="checkboxNumber"
                         :rules="[v => !!v || 'Поставте галочку']"
                         label="Все вірно?"
                         required>
                 </v-checkbox>
+
                 <div class="d-flex justify-center">
                     <v-btn :disabled="!valid"
                            color="primary"
@@ -31,19 +35,23 @@
                     >Знайти
                     </v-btn>
                 </div>
+
             </v-form>
         </div>
         <v-dialog v-model="dialog">
             <v-card>
+
                 <v-btn
-                        class="modal-btn pa-1"
+                        class="modal-btn"
+                        text
                         color="red darken-4"
                         @click="dialog = false"
                         dark>
-                    <v-icon dark left>mdi-arrow-left</v-icon>Закрити
+                    <v-icon dark left>mdi-exit-to-app</v-icon>
                 </v-btn>
 
-                <h3 class="pa-2">Номерний знак: {{getPhotos.numberCar}}</h3>
+                <h4 class="pa-2">Номерний знак: {{getPhotos.numberCar}}</h4>
+
                 <v-carousel>
                     <v-carousel-item
                             v-for="(photo,i) in getPhotos.img"
@@ -53,6 +61,7 @@
                             transition="fade-transition"
                     ></v-carousel-item>
                 </v-carousel>
+
             </v-card>
         </v-dialog>
     </div>

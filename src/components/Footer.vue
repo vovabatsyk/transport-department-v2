@@ -3,16 +3,12 @@
         <v-divider></v-divider>
         <v-footer
                 padless
-                class="d-flex flex-row justify-space-around flex-wrap grey lighten-3"
-        >
+                class="d-flex flex-row justify-space-around flex-wrap grey lighten-3">
             <div class="pa-2">
-
-
                 <v-card
                         max-width="375"
                         class="mx-auto"
-                        elevation="2"
-                >
+                        elevation="2">
                     <v-list v-for="(item, i) of items" :key="i">
                         <a :href="item.to">
                             <v-list-item @click="">
@@ -27,13 +23,12 @@
                             </v-list-item>
                         </a>
                         <v-divider inset></v-divider>
-
                     </v-list>
                 </v-card>
             </div>
             <div class="pa-2">
-                <div class="d-flex"><img src="../assets/img/drawer-lviv.png" width="175" alt="lmr"></div>
-                <div class="d-flex"><img src="../assets/img/lmr.png" width="175" alt="lviv"></div>
+                <div><img src="../assets/img/lviv-logo.png" width="175" alt="Lviv"></div>
+                <div><img src="../assets/img/lmr.png" width="175" alt="Lmr"></div>
             </div>
         </v-footer>
         <v-footer color="primary">

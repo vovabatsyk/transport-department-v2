@@ -2,7 +2,7 @@
     <div id="legislation">
         <div class="d-flex justify-center mb-3">
             <div class="legislation">
-                <v-img src="../assets/img/justice.svg" width="105" class="mt-9 mr-4 float-left"></v-img>
+                <v-img src="../assets/img/justice.svg" alt="Justice" width="105" class="mt-9 mr-4 float-left"></v-img>
                 <h2 class="text-center ma-1">Нормативна база</h2>
                 <ul v-for="(item,i) in items" :key="i">
                     <li class="mb3 text-justify mr-3"><a :href="item.to" target="_blank" class="legislation-links"><b>{{i+1}}</b>.
@@ -11,7 +11,7 @@
                 </ul>
             </div>
         </div>
-        <v-parallax src="../assets/img/evacuation.jpg"></v-parallax>
+        <v-parallax src="../assets/img/evacuation.jpg" alt="Evacuation"></v-parallax>
         <div class="d-flex justify-center">
             <div class="text-width">
                 <h2 class="text-center ma-3">Порядок евакуації та зберігання</h2>
@@ -33,7 +33,7 @@
                 </div>
             </div>
         </div>
-        <v-parallax src="../assets/img/key-car.jpg" alt=""></v-parallax>
+        <v-parallax src="../assets/img/key-car.jpg" alt="Car"></v-parallax>
         <div class="d-flex justify-center">
             <div class="text-width">
                 <h2 class="text-center ma-3">Підстави звільнення від адміністративної відповідальності</h2>
@@ -56,18 +56,20 @@
     data: () => ({
       items: [
         {
-          text: 'Закон України "Про внесення змін до деяких законодавчих актів України щодо реформування сфери паркування транспортних засобів" Документ 2262-VIII.',
-          to: 'https://zakon.rada.gov.ua/laws/show/2262-19#Text'
-        },
-        {text: 'КУпАП', to: 'https://zakon.rada.gov.ua/laws/show/80731-10'},
-        {
           text: 'Рішення Львівської міської ради №6108 від 26.12.2019',
           to: 'https://www8.city-adm.lviv.ua/inteam/uhvaly.nsf/(SearchForWeb)/EB6BDF4DF9FCC53AC22584EA004240BB?OpenDocument'
         },
         {
           text: 'Положення про управління транспорту',
           to: 'https://www8.city-adm.lviv.ua/Pool/Info/doclmr_1.NSF/(SearchForWeb)/A06291CB831717ADC22584F90047A6DD?OpenDocument'
-        }
+        },
+        {
+          text: 'Закон України "Про внесення змін до деяких законодавчих актів України щодо реформування сфери паркування транспортних засобів" Документ 2262-VIII.',
+          to: 'https://zakon.rada.gov.ua/laws/show/2262-19#Text'
+        },
+        {text: 'Кодекс України про адміністративні правопорушення', to: 'https://zakon.rada.gov.ua/laws/show/80731-10'},
+
+
       ]
     })
   }
