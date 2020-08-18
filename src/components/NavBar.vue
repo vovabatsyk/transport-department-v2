@@ -19,8 +19,7 @@
             </div>
             <v-toolbar-title>
                 <img src="../assets/img/lmr.png" alt="Lmr" width="110" class="mt-2 ml-2"/>
-                <img src="../assets/img/lviv-logo.png" alt="Lviv" height="60" class="ml-5"/>
-
+                <img src="../assets/img/parking-lviv.jpg" alt="Lviv" height="53" class="ml-5"/>
             </v-toolbar-title>
             <v-spacer></v-spacer>
             <div class="my-2 ml-2"

@@ -29,9 +29,11 @@
                     </v-list>
                 </v-card>
             </div>
+            <div><img src="../assets/img/lviv-logo.png"  width="150" alt="Lviv"></div>
+
             <div class="pa-2">
-                <div><img src="../assets/img/lviv-logo.png" width="175" alt="Lviv"></div>
                 <div><img src="../assets/img/lmr.png" width="175" alt="Lmr"></div>
+                <div><img src="../assets/img/parking-lviv-8x5.jpg" width="175" alt="Parking"></div>
             </div>
         </v-footer>
         <v-footer color="primary">
