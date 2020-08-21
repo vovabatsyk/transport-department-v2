@@ -8,9 +8,6 @@
                         <v-btn :href="link.to" class="drawer-links" outlined>{{link.name}}</v-btn>
                     </v-list-item>
                 </v-list>
-                <div>
-                    <img class="drawer-logo mb-10" src="../assets/img/lviv-logo.png" alt="Lviv">
-                </div>
             </v-navigation-drawer>
         </div>
         <v-app-bar app color="white" dark>
@@ -18,11 +15,11 @@
                 <v-icon @click.stop="drawer = !drawer" color="grey">mdi-menu</v-icon>
             </div>
             <v-toolbar-title>
-                <img src="../assets/img/lmr.png" alt="Lmr" width="110" class="mt-2 ml-2"/>
-                <img src="../assets/img/parking-lviv.jpg" alt="Parking-logo" height="53" class="ml-5"/>
+                <img src="../assets/img/lmr.png" alt="Lmr" width="100" class="mt-2 ml-2"/>
+                <img src="../assets/img/parking-lviv.jpg" alt="Parking-logo" height="50" class="ml-2"/>
             </v-toolbar-title>
             <v-spacer></v-spacer>
-            <div class="my-2 ml-2"
+            <div class="my-2"
                  v-for="link in links"
                  :key="link.name">
                 <v-btn :href="link.to" class="nav-btn" color="black" large outlined>
@@ -41,8 +38,8 @@
       links: [
         {name: 'Про управління', icon: 'mdi-home', to: '#'},
         {name: 'Нормативна база', icon: 'mdi-book-open-page-variant', to: '#legislation'},
-        {name: 'На замітку водіям', icon: 'mdi-car-info', to:'#information'},
-        {name: 'Контакти', icon: 'mdi-account-box-multiple', to: '#footer'},
+        {name: 'На замітку водіям', icon: 'mdi-car-info', to: '#information'},
+        {name: 'Контакти', icon: 'mdi-account-box-multiple', to: '#footer'}
       ]
 
     })

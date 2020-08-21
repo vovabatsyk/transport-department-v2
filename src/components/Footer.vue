@@ -3,7 +3,12 @@
         <v-divider></v-divider>
         <v-footer
                 padless
-                class="d-flex flex-row justify-space-around flex-wrap grey lighten-3">
+                class="d-flex flex-row justify-space-around flex-wrap-reverse grey lighten-3">
+            <div class="d-flex flex-row align-self-start">
+                <div class="mr-2"><img src="../assets/img/lviv-logo.png" width="100" alt="Lviv"></div>
+                <div class="mr-2"><img src="../assets/img/lmr.png" width="110" alt="Lmr" class="mt-1"></div>
+                <div class="img-footer"><img src="../assets/img/parking-lviv-8x5.jpg" width="95" alt="Lviv"></div>
+            </div>
             <div class="pa-2">
                 <v-card
                         max-width="375"
@@ -26,12 +31,7 @@
                     </v-list>
                 </v-card>
             </div>
-            <div><img src="../assets/img/lviv-logo.png" width="175" alt="Lviv"></div>
 
-            <div class="pa-2">
-                <div><img src="../assets/img/lmr.png" width="175" alt="Lmr"></div>
-                <div><img src="../assets/img/parking-lviv-8x5.jpg" width="175" alt="Lviv"></div>
-            </div>
         </v-footer>
         <v-footer color="primary">
             <v-spacer></v-spacer>
@@ -52,13 +52,13 @@
           icon: 'mdi-email',
           to: 'mailto:parking.lviv.inspector@gmail.com'
         },
-        {title: 'Індекс:', text: '79012', icon: 'mdi-mailbox', to: 'https://goo.gl/maps/SG27sqti3kUSFK776'},
         {
           title: 'Адреса:',
           text: 'м.Львів, вул.Сахарова 2',
           icon: 'mdi-map-marker',
           to: 'https://goo.gl/maps/SG27sqti3kUSFK776'
-        }
+        },
+        {title: 'Індекс:', text: '79012', icon: 'mdi-mailbox', to: 'https://goo.gl/maps/SG27sqti3kUSFK776'},
       ]
     })
   }
